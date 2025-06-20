@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get Health Insurance Quote</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7d2d12aa81?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      color: #333;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      color: #0066cc;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #0066cc;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004e99;
+    }
+
+    @media (max-width: 640px) {
+      .form-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Get a Free Health Insurance Quote</h2>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DGA00000A7mZJ" method="POST">
+
+      <input type="hidden" name="oid" value="00DGA00000A7mZJ">
+      <input type="hidden" name="retURL" value="http://www.webmd.com/">
+
+      <label for="first_name">First Name</label>
+      <input id="first_name" maxlength="40" name="first_name" type="text" required>
+
+      <label for="last_name">Last Name</label>
+      <input id="last_name" maxlength="80" name="last_name" type="text" required>
+
+      <label for="00NGA00000ctxOS">Age</label>
+      <input id="00NGA00000ctxOS" name="00NGA00000ctxOS" type="text">
+
+      <label for="email">Email</label>
+      <input id="email" maxlength="80" name="email" type="email" required>
+
+      <label for="city">City</label>
+      <input id="city" maxlength="40" name="city" type="text">
+
+      <label for="state">State/Province</label>
+      <input id="state" maxlength="20" name="state" type="text">
+
+      <label>
+        <input id="00NGA00000ctC7M" name="00NGA00000ctC7M" type="checkbox" value="1">
+        Existing Policy Holder?
+      </label>
+
+      <label for="00NGA00000ctC6J">Policy Type</label>
+      <select id="00NGA00000ctC6J" name="00NGA00000ctC6J">
+        <option value="">--None--</option>
+        <option value="Life">Life</option>
+        <option value="Health">Health</option>
+        <option value="Auto">Auto</option>
+        <option value="Home">Home</option>
+        <option value="Travel">Travel</option>
+      </select>
+
+      <label for="00NGA00000ctC7C">Preferred Contact Time</label>
+      <input id="00NGA00000ctC7C" name="00NGA00000ctC7C" type="text">
+
+      <label>
+        <input id="00NGA00000ctC77" name="00NGA00000ctC77" type="checkbox" value="1">
+        Recent Medical Checkup
+      </label>
+
+      <label for="00NGA00000ctC72">Pre-existing Conditions</label>
+      <textarea id="00NGA00000ctC72" name="00NGA00000ctC72" rows="3"></textarea>
+
+      <label for="00NGA00000ctC6x">Annual Income</label>
+      <input id="00NGA00000ctC6x" name="00NGA00000ctC6x" type="text">
+
+      <label for="00NGA00000ctC6n">Gender</label>
+      <select id="00NGA00000ctC6n" name="00NGA00000ctC6n">
+        <option value="">--None--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="00NGA00000ctC6d">Premium Frequency</label>
+      <select id="00NGA00000ctC6d" name="00NGA00000ctC6d">
+        <option value="">--None--</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Annually">Annually</option>
+      </select>
+
+      <label for="00NGA00000ctC6T">Policy Term (Years)</label>
+      <input id="00NGA00000ctC6T" name="00NGA00000ctC6T" type="text">
+
+      <label for="00NGA00000ctC6O">Coverage Amount</label>
+      <input id="00NGA00000ctC6O" name="00NGA00000ctC6O" type="text">
+
+      <label for="00NGA00000ctC7H">Notes / Special Requests</label>
+      <textarea id="00NGA00000ctC7H" name="00NGA00000ctC7H" rows="3"></textarea>
+
+      <input type="submit" value="Get Quote Now">
+
+    </form>
+  </div>
+
+</body>
+</html>
